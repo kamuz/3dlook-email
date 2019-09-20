@@ -1,0 +1,125 @@
+@media screen and (max-width: 600px) {
+    .social-icons td {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+
+        a {
+            text-align: center;
+            line-height: 45px;
+
+            img {
+                display: inline-block;
+                max-width: 22px;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+
+        &.hidden-desktop {
+            display: table;
+        }
+
+        &.hidden-mobile {
+            display: none;
+        }
+
+        tr {
+            &.hidden-desktop {
+                display: table-row;
+            }
+
+            &.hidden-mobile {
+                display: none;
+            }
+
+            td {
+                &.hidden-desktop {
+                    display: table-cell;
+                }
+
+                &.hidden-mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header {
+        .header-table {
+            height: 225px;
+
+            .header-logo-container {
+                padding-left: 20px;
+
+                .header-logo {
+                    margin-bottom: 97px;
+                }
+            }
+
+            .header-navigation-container {
+                padding-right: 0;
+            }
+
+            .hidden-desktop {
+                table {
+                    margin-left: 20px;
+                }
+
+                .products-navigation {
+                    margin: 0;
+                    margin-bottom: 10px;
+                    padding: 0 20px;
+
+                    td {
+                        &:after {
+                            display: none;
+                        }
+
+                        a {
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #fff;
+                            opacity: 1;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    table {
+        width: 100%;
+    }
+
+    .header {
+        .header-table {
+            .header-logo-container {
+                .header-logo {
+                    width: 113px;
+                    height: 16px;
+                }
+            }
+
+            .header-navigation-container {
+                top: 2px;
+
+                .header-navigation {
+                    li {
+                        margin-right: 13px;
+
+                        a {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
