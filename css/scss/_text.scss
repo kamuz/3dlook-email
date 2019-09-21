@@ -8,6 +8,7 @@ h2 {
     margin-top: 43px;
     margin-bottom: 10px;
 }
+
 h3 {
     font-size: 14px;
     margin: 0;
@@ -16,6 +17,7 @@ h3 {
     margin-top: 23px;
     margin-bottom: 14px;
 }
+
 p {
     color: #282828;
     font-size: 12px;
@@ -23,12 +25,15 @@ p {
     margin-top: 0;
     margin-bottom: 39px;
 }
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
     li {
         display: inline-block;
+
         a {
             text-decoration: none;
         }

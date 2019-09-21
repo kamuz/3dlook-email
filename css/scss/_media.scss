@@ -1,4 +1,15 @@
 @media screen and (max-width: 600px) {
+
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .contact>td,
+    .hello>td,
+    .footer>td {
+        padding: 0 20px !important;
+    }
+
     .social-icons td {
         display: inline-block;
         width: 40px;
@@ -16,7 +27,7 @@
     }
 
     table {
-        width: 100%;
+        width: 100% !important;
 
         &.hidden-desktop {
             display: table;
@@ -61,6 +72,10 @@
 
             .header-navigation-container {
                 padding-right: 0;
+
+                .header-navigation {
+                    margin-right: 38px;
+                }
             }
 
             .hidden-desktop {
@@ -84,7 +99,144 @@
                             color: #fff;
                             opacity: 1;
                             white-space: nowrap;
+                            display: block;
+                            margin-bottom: 10px;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .article {
+        &.hidden-desktop {
+            span {
+                position: absolute;
+                bottom: -27px;
+                left: 50%;
+                width: 189px !important;
+                margin-left: -94px;
+            }
+        }
+
+        >td {
+            padding: 20px;
+        }
+    }
+
+    .articles {
+        >td {
+            padding: 20px;
+        }
+
+        .pl-20 {
+            padding: 20px;
+        }
+
+        img {
+            min-width: 100%;
+        }
+    }
+
+    .social {
+        .hidden-desktop {
+            text-align: center;
+        }
+    }
+
+    .contact {
+        .hidden-desktop {
+            .title {
+                h2 {
+                    margin-top: 30px;
+                }
+            }
+
+            .avatar {
+                display: inline-block;
+                width: 100px;
+
+                img {
+                    width: 100%;
+                    max-width: 100px;
+                    margin-top: 9px;
+                }
+
+            }
+
+            .contact-info {
+                display: inline-block;
+                width: calc(100% - 100px);
+                box-sizing: border-box;
+                padding-left: 30px;
+                padding-top: 10px;
+
+                .name {
+                    margin: 0;
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #000;
+                    font-weight: 700;
+                }
+
+                .position {
+                    margin: 0;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #000;
+                }
+            }
+        }
+
+        .social-icons {
+            td {
+                margin: 30px 20px 20px 0;
+                width: 40px;
+                height: 40px;
+
+                a {
+                    line-height: 56px;
+                    img{
+                        max-width: 32px;
+                        width: 32px;
+                    }
+                }
+
+                .instagram {
+                    line-height: 62px !important;
+                }
+
+                .facebook {
+                    line-height: 62px !important;
+
+                    img {
+                        width: 15px !important;
+                    }
+                }
+            }
+        }
+
+        .address {
+            font-size: 12px;
+            line-height: 20px;
+            margin-right: 10px;
+            color: #9ca4b1;
+
+            &.second {
+                font-size: 12px;
+                line-height: 20px;
+                color: #9ca4b1;
+            }
+        }
+    }
+
+    .articles {
+        .single-article {
+            table {
+                tr {
+                    td {
+                        &:first-child {}
                     }
                 }
             }
@@ -92,7 +244,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     table {
         width: 100%;
     }
@@ -110,6 +262,7 @@
                 top: 2px;
 
                 .header-navigation {
+                    margin-right: 10px;
                     li {
                         margin-right: 13px;
 
@@ -121,5 +274,4 @@
             }
         }
     }
-    
 }

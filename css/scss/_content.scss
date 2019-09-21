@@ -30,7 +30,7 @@
                 color: #282828;
             }
 
-            p{
+            p {
                 margin-bottom: 10px;
             }
 
@@ -41,7 +41,7 @@
                 left: 0;
                 width: 100%;
                 height: 98.1%;
-                
+
             }
 
             td {
@@ -138,67 +138,75 @@
         }
     }
 
-    .hidden-mobile {
-        &.articles {
-            .headline {
-                table {
-                    width: 480px;
+    .articles {
+        .headline {
+            table {
+                width: 480px;
 
-                    h3 {
-                        font-family: Roboto, Arial, sans-serif;
-                        font-size: 20px;
-                        line-height: 24px;
-                        margin-bottom: 30px
-                    }
+                h3 {
+                    font-family: Roboto, Arial, sans-serif;
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 30px
                 }
             }
-            .single-article {
-                table {
-                    width: 480px;
-                    margin-bottom: 20px;
+        }
 
-                    tr {
-                        border: 2px solid #E5E5E5;
-                        height: 123px;
+        .single-article {
+            > td > table{
+                margin-bottom: 20px;
+            }
+            table {
+                tr {
+                    border: 2px solid #E5E5E5;
+                    height: 123px;
 
-                        img {
-                            display: block;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+
+                    td {
+                        &.pl-20 {
+                            padding-top: 5px;
+                            padding-right: 20px;
                         }
 
-                        td {
-                            &:last-child {
-                                padding: 0 20px 0 25px;
-                            }
+                        .tag {
+                            margin-bottom: 5px;
+                            display: inline-block;
+                            font-family: Roboto, Arial, sans-serif;
+                            font-size: 10px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            color: #B1B4BB;
+                        }
 
-                            .tag {
-                                margin-bottom: 5px;
-                                display: inline-block;
-                                font-family: Roboto, Arial, sans-serif;
-                                font-size: 10px;
+                        h3 {
+                            line-height: 16px;
+                            font-family: Roboto, Arial, sans-serif;
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin: 0 0 5px 0;
+                            padding: 0;
+                        }
+
+                        p {
+                            font-family: Roboto, Arial, sans-serif;
+                            font-size: 12px;
+                            margin: 0;
+                            padding: 0;
+
+                            a {
+                                color: #EEB200;
                                 font-weight: bold;
-                                text-transform: uppercase;
-                                color: #B1B4BB;
                             }
+                        }
 
-                            h3 {
-                                line-height: 16px;
-                                font-family: Roboto, Arial, sans-serif;
-                                font-size: 14px;
-                                font-weight: bold;
-                                margin: 0 0 5px 0;
-                                padding: 0;
-                            }
-
-                            p {
-                                font-family: Roboto, Arial, sans-serif;
-                                font-size: 12px;
-                                margin: 0;
-                                padding: 0;
-
-                                a {
-                                    color: #EEB200;
-                                    font-weight: bold;
-                                }
+                        table {
+                            tr {
+                                border: 0;
+                                height: auto;
                             }
                         }
                     }
