@@ -70,13 +70,9 @@
         }
 
         .card-btn-container {
-            z-index: 10;
             display: inline-block;
             width: 100%;
             text-align: center;
-            position: relative;
-            bottom: 35px;
-            margin-top: 12px;
 
             .btn {
                 color: #fff;
@@ -94,47 +90,45 @@
                 tr {
                     &:first-child {
                         td {
-                            background-color: #fff;
-
                             img {
                                 width: 100%;
                             }
                         }
                     }
 
-                    &:last-child {
+                    &:nth-child(2) {
                         td {
                             background-color: #fff;
-                            padding: 20px;
+                            padding: 20px !important;
                             padding-bottom: 48px;
                             display: inline-block;
-                            max-height: 154px;
 
                             h3 {
-                                margin: 0;
-                                margin-top: 10px;
+                                margin: 0 0 10px !important;
                                 color: #282828;
                             }
 
                             p {
-                                margin-top: 10px;
-                                margin-bottom: 0;
+                                margin-top: 10px !important;
+                                margin-bottom: 20px !important;
                             }
+                        }
+                    }
 
-                            span {
-                                width: 100%;
-                                display: inline-block;
-                                margin-top: 20px;
-                                text-align: center;
-
-                                a {
-                                    color: #fff;
-                                }
-                            }
+                    &:last-child{
+                        .btn {
+                            margin: -22px auto 0;
+                            display: block;
                         }
                     }
                 }
             }
+        }
+    }
+
+    .hidden-mobile {
+        table {
+            margin-bottom: 30px;
         }
     }
 
@@ -153,9 +147,10 @@
         }
 
         .single-article {
-            > td > table{
+            >td>table {
                 margin-bottom: 20px;
             }
+
             table {
                 tr {
                     border: 2px solid #E5E5E5;
@@ -187,15 +182,15 @@
                             font-family: Roboto, Arial, sans-serif;
                             font-size: 14px;
                             font-weight: bold;
-                            margin: 0 0 5px 0;
+                            margin: 0 0 5px 0 !important;
                             padding: 0;
                         }
 
                         p {
                             font-family: Roboto, Arial, sans-serif;
                             font-size: 12px;
-                            margin: 0;
-                            padding: 0;
+                            margin: 0 !important;
+                            padding: 0 !important;
 
                             a {
                                 color: #EEB200;

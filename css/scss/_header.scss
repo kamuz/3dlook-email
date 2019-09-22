@@ -6,7 +6,7 @@
     .header-table {
         width: 600px;
         height: 266px;
-        background-image: url('img/top-header.png');
+        background-image: url('https://kamuz.github.io/3dlook-email/img/top-header.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,26 +28,6 @@
 
             li {
                 margin-right: 0;
-            }
-        }
-
-        .hidden-mobile {
-            .products-navigation {
-                td {
-                    &:nth-child(2) {
-                        padding-left: 58px;
-                    }
-
-                    &:last-child {
-                        a {
-                            padding-left: 90px;
-                        }
-                    }
-
-                    a {
-                        display: inline-block;
-                    }
-                }
             }
         }
 
@@ -87,6 +67,10 @@
             margin-left: 60px;
 
             td {
+                a {
+                    display: inline-block;
+                }
+
                 &:after {
                     content: '';
                     display: inline-block;
@@ -98,20 +82,30 @@
                     top: 11px;
                 }
 
-                &:nth-child(1)::after {
-                    right: -20px;
+                &:nth-child(1){
+                    &::after{
+                        right: -20px;
+                    }
                 }
 
                 &:nth-child(2) {
-                    padding-left: 58px;
+                    &:after {
+                        right: -38px;
+                    }
+
+                    a {
+                        padding-left: 65px;
+                    }
                 }
 
-                &:nth-child(2)::after {
-                    right: -44px;
-                }
+                &:nth-child(3) {
+                    &:after {
+                        display: none;
+                    }
 
-                &:nth-child(3)::after {
-                    display: none;
+                    a {
+                        padding-left: 80px;
+                    }
                 }
 
                 a {
