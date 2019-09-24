@@ -10,11 +10,26 @@ body a,
 body td {
   font-family: "Roboto", Arial, sans-serif;
 }
+body a {
+  text-decoration: none;
+}
 body .container {
   width: 100%;
 }
 body .pl-20 {
   padding-left: 20px;
+}
+body .pre-text {
+  display: none !important;
+  visibility: hidden;
+  mso-hide: all;
+  font-size: 1px;
+  color: #ffffff;
+  line-height: 1px;
+  max-height: 0px;
+  max-width: 0px;
+  opacity: 0;
+  overflow: hidden;
 }
 
 table {
@@ -76,6 +91,10 @@ p {
   line-height: 20px;
   margin-top: 0;
   margin-bottom: 39px;
+}
+
+a {
+  color: #282828;
 }
 
 ul {
